@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Weather" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="static/css/weather.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="weather.js" defer></script>
+    <title>WeatherGenie</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light justify-content-center" style="background-color: #62626258;">
+        <a class="nav-link link-light" href="https://weather.com/news">
+            <h6>Wish For Weather News</h6>
+        </a>
+        <a class="nav-link link-light" href="https://weather.com/maps/severealerts">
+            <h6>Wish For Severe Alerts</h6>
+        </a>
+        <a class="nav-link link-light"
+            href="https://weather.com/weather/radar/interactive/l/4b807770f7a9a68ab3236c14beec03d4f8471b97c32e6e9e972a36533e58559b">
+            <h6>Wish For an Interactive Radar Map</h6>
+        </a>
+    </nav>
+
+    <header class="d-flex justify-content-center py-3 text-white mt-3">
+        <h2>Meet The Weather Genie!</h2>
+    </header>
+    
+    <div>
+        <header class="d-flex justify-content-center py-3 text-white">
+            <div id="genie">
+                <img src="static/images/genie.gif">
+            </div>
+    </div>
+    
+    <div class="d-flex justify-content-center py-3 text-white">
+        <h6>Hey we didn't tell you to rub the lamp...</h6>
+    </div>
+    
+    <div class="d-flex justify-content-center text-white">
+        <H4>Enter your city, state, and country to predict your desired weather forecasts!</h4>
+    </div>
+    
+    <div id="weather" class="row justify-content-center mt=6 text-white">
+        <div id="fields" class="col-10">
+            <form>
+                <input type="text" class="text" placeholder="City" id="cityselect">
+                <input type="text" class="text" placeholder="State" id="stateselect">
+                <input type="text" class="text" placeholder="Country" id="countryselect">
+                <div>
+                    <button type="button" class="btn" id="button" onclick=getData()>
+                        <h5 id="words">Make Your Wish</h5>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <div class="row justify-content-center mt=8">
+        <div class="col-3">
+            <table id="table_1" class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">High</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th id="high-0"></th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+        <div class="col-2">
+            <table id="table_2" class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Low</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+    
+                        <th id="low-0"></th>
+                    </tr>
+    
+                </tbody>
+            </table>
+        </div>
+    
+    
+        <div class="col-3">
+            <table id="table_3" class="table">
+                <thead>
+                    <tr>
+    
+                        <th scope="col">Forecast</th>
+    
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th id="forecast-0"></th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+    
+        <div class="col-2">
+            <table id="table_4" class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Humidity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th id="humidity-0"></th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

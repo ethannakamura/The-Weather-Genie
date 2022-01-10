@@ -1,0 +1,66 @@
+body{
+  background-image:url("https://images.hdqwalls.com/download/macos-mojave-night-mode-stock-0y-2560x1440.jpg");
+}
+
+#table_1{
+  background-color: rgba(255, 255, 255, 0.897);
+  color: rgb(0, 0, 0);
+  margin-top: 50px;
+  text-align: center;
+}
+#table_2{
+  background-color: rgba(255, 255, 255, 0.897);
+  color: rgb(0, 0, 0);
+  margin-top: 50px;
+  text-align: center;
+}
+#table_3{
+  background-color: rgba(255, 255, 255, 0.897);
+  color: rgb(0, 0, 0);
+  margin-top: 50px;
+  text-align: center;
+}
+
+#table_4{
+  background-color: rgba(255, 255, 255, 0.897);
+  color: rgb(0, 0, 0);
+  margin-top: 50px;
+  text-align: center;
+}
+
+#fields{
+  color: rgb(0, 0, 0);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#city{
+    text-align:center;
+}
+
+#state{
+    text-align:center;
+}
+
+#country{
+    text-align:center;
+}
+
+#button{
+    height: 50px;
+    width: 50px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    border: 40px;
+    width: 200px;
+    background-image: url(https://slm-assets.secondlife.com/assets/24870564/original/tumblr_o1b5ekTr5W1s9w3qso1_500.gif?1572078614);
+    color:rgba(255, 255, 255, 0.996)
+}
+
+#words{
+    margin-top: 8px;
+}
+#genie{
+    align-items: center;
+}
